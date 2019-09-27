@@ -53,7 +53,14 @@
     "driverMemory": "4000M",
     "executorCores": 2,
     "jars": ["/user/hdfs/hive-warehouse-connector-assembly-1.0.0.3.1.4.0-315.jar"],
-    "pyFiles": ["/user/hdfs/pyspark_hwc-1.0.0.3.1.4.0-315.zip"]
+    "pyFiles": ["/user/hdfs/pyspark_hwc-1.0.0.3.1.4.0-315.zip"],
+    "conf": {"spark.sql.hive.hiveserver2.jdbc.url": "jdbc:hive2://prod-hadoop2.ai-rein.com:2181,prod-hadoop3.ai-rein.com:2181,prod-hadoop4.ai-rein.com:2181/default;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver",
+             "spark.sql.warehouse.dir": "/apps/spark/warehouse",
+             "hive.metastore.uris": "thrift://prod-hadoop3.ai-rein.com:9083/default",
+             "hive.exec.dynamic.partition": "true",
+             "hive.exec.dynamic.partition.mode": "nonstrict",
+             "hive.transactional.table.scan": "true"
+            },
   },
 
   "use_auto_viz": true,

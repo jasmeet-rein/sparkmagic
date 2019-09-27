@@ -53,8 +53,8 @@
     "driverMemory": "4000M",
     "executorCores": 2,
     "conf": {
-        "spark.jars.packages": "/usr/hdp/current/hive_warehouse_connector/hive-warehouse-connector-assembly-1.0.0.3.1.4.0-315.jar",
-        "livy.spark.jars": "/usr/hdp/current/hive_warehouse_connector/hive-warehouse-connector-assembly-1.0.0.3.1.4.0-315.jar",
+        "spark.jars.packages": "com.hortonworks.hive:hive-warehouse-connector_2.11:1.0.0.3.1.2.1-1",
+        "livy.spark.jars": "com.hortonworks.hive:hive-warehouse-connector_2.11:1.0.0.3.1.2.1-1",
         "livy.spark.submit.pyFiles": "/usr/hdp/current/hive_warehouse_connector/pyspark_hwc-1.0.0.3.1.4.0-315.zip"
     }
   },

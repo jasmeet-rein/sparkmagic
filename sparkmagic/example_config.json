@@ -52,12 +52,8 @@
   "session_configs": {
     "driverMemory": "4000M",
     "executorCores": 2,
-    "jars": ["/usr/hdp/current/hive_warehouse_connector/hive-warehouse-connector-assembly-1.0.0.3.1.4.0-315.jar"],
-    "pyFiles": ["/usr/hdp/current/hive_warehouse_connector/pyspark_hwc-1.0.0.3.1.4.0-315.zip"],
-    "conf": {
-        "livy.spark.jars": "/usr/hdp/current/hive_warehouse_connector/hive-warehouse-connector-assembly-1.0.0.3.1.4.0-315.jar",
-        "livy.spark.submit.pyFiles": "/usr/hdp/current/hive_warehouse_connector/pyspark_hwc-1.0.0.3.1.4.0-315.zip"
-    }
+    "jars": ["/user/hdfs/hive-warehouse-connector-assembly-1.0.0.3.1.4.0-315.jar"],
+    "pyFiles": ["/user/hdfs/pyspark_hwc-1.0.0.3.1.4.0-315.zip"]
   },
 
   "use_auto_viz": true,
